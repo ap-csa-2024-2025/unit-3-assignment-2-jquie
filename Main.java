@@ -5,10 +5,10 @@ public class Main
   public static void main(String[] args)
   {
     Scanner userInput = new Scanner(System.in);
-    
+
     double num = userInput.nextDouble();
     double num2 = userInput.nextDouble();
-   
+
    //Problem 1
     if (num == 12.345)
     {
@@ -74,6 +74,31 @@ public class Main
     System.out.print("Invalid letter grade");
   }
   
+ // Problem 7
+ int rand = (int) (Math.random()*51);
+ int rand2 = (int) (Math.random()*50)+51;
+ System.out.println(rand + " + " + rand2 + "?");
+ int answer = userInput.nextInt();
+ if (answer == (rand + rand2))
+ {
+  System.out.println("Correct");
+ }
+ else
+ {
+  System.out.println("Wrong");
+ }
+
+// Problem 8
+System.out.println("What is your temperature?");
+int temp = userInput.nextInt();
+if (97 <= temp && temp <= 99)
+{
+  System.out.println("Temperature is OK");
+}
+else
+{
+  System.out.println("NOT NORMAL");
+}
   }
   }
 
